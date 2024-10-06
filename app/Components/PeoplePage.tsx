@@ -3,24 +3,11 @@
 
 import React, { useState } from 'react';
 
-interface Person {
-    name: string;
-    email: string;
-    status: string;
-    role: string;
-    property: string;
-    unit: string;
-    lastInvited: string;
-}
-
 export default function PeoplePage() {
     const [tab, setTab] = useState<'Approved' | 'Awaiting Approval'>('Approved');
-    const [isOpen, setIsOpen] = useState<Boolean>(false)
+    const [isOpen, setIsOpen] = useState<boolean>(false)
 
-    const people: Person[] = [
-        { name: 'JP', email: 'yjoch12@gmail.com', status: 'Active', role: 'Admin', property: '-', unit: 'ABC', lastInvited: '08/15/2024' },
-        // You can add more mock data here
-    ];
+
 
     return (
         <div className="sm:ml-64 mt-5 px-5">

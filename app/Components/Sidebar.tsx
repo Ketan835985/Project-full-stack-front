@@ -1,11 +1,7 @@
 import React, { FunctionComponent } from "react";
-import { MdHomeFilled } from "react-icons/md";
 
-interface SidebarProps {
 
-}
-
-const Sidebar: FunctionComponent<SidebarProps> = () => {
+const Sidebar: FunctionComponent = () => {
     return (<div className=" border border-r-2 border-[#E8E8E8]">
         <button
             data-drawer-target="default-sidebar"

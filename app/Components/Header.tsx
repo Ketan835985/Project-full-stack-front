@@ -1,10 +1,6 @@
 import { FunctionComponent } from "react";
 
-interface HeaderProps {
-
-}
-
-const Header: FunctionComponent<HeaderProps> = () => {
+const Header: FunctionComponent = () => {
     return (<nav className="bg-white border-gray-200">
         <div className="max-w-screen px-5 py-2 flex flex-wrap items-center justify-between text-lg ">
             <a
@@ -63,7 +59,6 @@ const Header: FunctionComponent<HeaderProps> = () => {
                         />
                     </svg>
                 </button>
-                {/* CV button (always visible) */}
 
             </div>
 
